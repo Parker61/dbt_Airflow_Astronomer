@@ -1,0 +1,24 @@
+{"timestamp":"2025-08-05T09:18:12.382338","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager"}
+{"timestamp":"2025-08-05T09:18:12.386319","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/dbt/TaskFlow API_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-08-05T09:18:12.613373","level":"info","event":"Trying to parse the dbt project using dbt ls cache cosmos_cache__my_first_dag__dbt_task_group...","logger":"cosmos.dbt.graph"}
+{"timestamp":"2025-08-05T09:18:12.615768","level":"info","event":"Secrets backends loaded for worker","count":1,"backend_classes":["EnvironmentVariablesBackend"],"logger":"supervisor"}
+{"timestamp":"2025-08-05T09:18:12.651250","level":"info","event":"Cosmos performance: Cache miss for cosmos_cache__my_first_dag__dbt_task_group","logger":"cosmos.dbt.graph"}
+{"timestamp":"2025-08-05T09:18:12.680911","level":"info","event":"Trying to parse the dbt project in `/opt/airflow/dags/dbt` using dbt ls...","logger":"cosmos.dbt.graph"}
+{"timestamp":"2025-08-05T09:18:12.814762","level":"info","event":"Partial parse is enabled and the latest partial parse file is /opt/airflow/dags/dbt/target/partial_parse.msgpack","logger":"cosmos.dbt.graph"}
+{"timestamp":"2025-08-05T09:18:13.219532","level":"info","event":"Profile caching is enable.","logger":"cosmos.config"}
+{"timestamp":"2025-08-05T09:18:13.220133","level":"info","event":"Using mock values for profile dbt_study","logger":"cosmos.profiles.base"}
+{"timestamp":"2025-08-05T09:18:13.221499","level":"info","event":"Profile not found in cache storing and using profile: /tmp/cosmos/profile/85b8f46954269e4707deec868cbba4cc2b65d9ebab867732ca41963e0da1074c/profiles.yml.","logger":"cosmos.config"}
+{"timestamp":"2025-08-05T09:18:13.263038","level":"info","event":"Running command with Python subprocess: `/usr/local/bin/dbt deps --project-dir /tmp/tmpp0_8fss7 --profiles-dir /tmp/cosmos/profile/85b8f46954269e4707deec868cbba4cc2b65d9ebab867732ca41963e0da1074c --profile dbt_study --target dev`","logger":"cosmos.dbt.graph"}
+{"timestamp":"2025-08-05T09:18:13.320049","level":"info","event":"Trying to parse the dbt project `dbt` using a custom Cosmos method...","logger":"cosmos.dbt.graph"}
+{"timestamp":"2025-08-05T09:18:15.209473","level":"info","event":"Total nodes: 75","logger":"cosmos.dbt.graph"}
+{"timestamp":"2025-08-05T09:18:15.367313Z","level":"error","event":"Server indicated the task shouldn't be running anymore. Terminating process","detail":{"detail":{"reason":"not_running","message":"TI is no longer in the running state and task should terminate","current_state":"failed"}},"logger":"task"}
+{"timestamp":"2025-08-05T09:18:15.224592","level":"info","event":"Total filtered nodes: 1","logger":"cosmos.dbt.graph"}
+{"timestamp":"2025-08-05T09:18:15.224785","level":"info","event":"Cosmos performance (my_first_dag__dbt_task_group) -  [77b390b50e69|98]: It took 2.61s to parse the dbt project for DAG using LoadMode.CUSTOM","logger":"cosmos.converter"}
+{"timestamp":"2025-08-05T09:18:15.239959","level":"info","event":"Cosmos performance (my_first_dag__dbt_task_group) - [77b390b50e69|98]: It took 0.0152s to build the Airflow DAG.","logger":"cosmos.converter"}
+{"timestamp":"2025-08-05T09:18:15.272079","level":"info","event":"Could not import dbtRunner. Falling back to subprocess for invoking dbt.","logger":"cosmos.operators.base"}
+{"timestamp":"2025-08-05T09:18:15.272542","level":"info","event":"Cloning project to writable temp directory /tmp/tmpjaz1lcx0 from /opt/airflow/dags/dbt","logger":"cosmos.operators.base"}
+{"timestamp":"2025-08-05T09:18:15.565712Z","level":"info","event":"Task instance is in running state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-05T09:18:15.566008Z","level":"info","event":" Previous state of the Task instance: queued","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-05T09:18:15.566200Z","level":"info","event":"Current task name:dbt_task_group.stg_flights__aircrafts_run","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-05T09:18:15.566360Z","level":"info","event":"Dag name:my_first_dag","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-05T09:18:15.566954Z","level":"error","event":"Task killed!","logger":"task"}

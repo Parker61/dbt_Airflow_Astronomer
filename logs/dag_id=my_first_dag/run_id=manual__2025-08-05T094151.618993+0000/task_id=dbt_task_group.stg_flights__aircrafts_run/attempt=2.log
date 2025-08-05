@@ -1,0 +1,17 @@
+{"timestamp":"2025-08-05T09:44:19.190531","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager"}
+{"timestamp":"2025-08-05T09:44:19.191113","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/dbt/my_first_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-08-05T09:44:19.223854","level":"info","event":"Trying to parse the dbt project using dbt ls cache cosmos_cache__my_first_dag...","logger":"cosmos.dbt.graph"}
+{"timestamp":"2025-08-05T09:44:19.225345","level":"info","event":"Secrets backends loaded for worker","count":1,"backend_classes":["EnvironmentVariablesBackend"],"logger":"supervisor"}
+{"timestamp":"2025-08-05T09:44:19.293192","level":"info","event":"Cosmos performance: Cache miss for cosmos_cache__my_first_dag","logger":"cosmos.dbt.graph"}
+{"timestamp":"2025-08-05T09:44:19.295454","level":"info","event":"Trying to parse the dbt project in `/opt/airflow/dags/dbt` using dbt ls...","logger":"cosmos.dbt.graph"}
+{"timestamp":"2025-08-05T09:44:19.351951","level":"info","event":"Partial parse is enabled and the latest partial parse file is /opt/airflow/dags/dbt/target/partial_parse.msgpack","logger":"cosmos.dbt.graph"}
+{"timestamp":"2025-08-05T09:44:19.432878","level":"info","event":"Profile caching is enable.","logger":"cosmos.config"}
+{"timestamp":"2025-08-05T09:44:19.433437","level":"info","event":"Profile found in cache using profile: /tmp/cosmos/profile/85b8f46954269e4707deec868cbba4cc2b65d9ebab867732ca41963e0da1074c/profiles.yml.","logger":"cosmos.config"}
+{"timestamp":"2025-08-05T09:44:19.447798","level":"info","event":"Running command with Python subprocess: `/usr/local/bin/dbt deps --project-dir /tmp/tmpq02w07ay --profiles-dir /tmp/cosmos/profile/85b8f46954269e4707deec868cbba4cc2b65d9ebab867732ca41963e0da1074c --profile dbt_study --target dev`","logger":"cosmos.dbt.graph"}
+{"timestamp":"2025-08-05T09:44:19.452183","level":"info","event":"Trying to parse the dbt project `dbt` using a custom Cosmos method...","logger":"cosmos.dbt.graph"}
+{"timestamp":"2025-08-05T09:44:19.930921","level":"info","event":"Total nodes: 75","logger":"cosmos.dbt.graph"}
+{"timestamp":"2025-08-05T09:44:19.931058","level":"info","event":"Total filtered nodes: 1","logger":"cosmos.dbt.graph"}
+{"timestamp":"2025-08-05T09:44:19.931187","level":"info","event":"Cosmos performance (my_first_dag) -  [77b390b50e69|612]: It took 0.707s to parse the dbt project for DAG using LoadMode.CUSTOM","logger":"cosmos.converter"}
+{"timestamp":"2025-08-05T09:44:19.938872","level":"info","event":"Cosmos performance (my_first_dag) - [77b390b50e69|612]: It took 0.00763s to build the Airflow DAG.","logger":"cosmos.converter"}
+{"timestamp":"2025-08-05T09:44:19.939457","level":"error","event":"Task not found in DAG during start up","dag_id":"my_first_dag","task_id":"dbt_task_group.stg_flights__aircrafts_run","bundle":"BundleInfo(name='dags-folder', version=None)","path":"dbt/my_first_dag.py","logger":"task"}
+{"timestamp":"2025-08-05T09:44:19.963357Z","level":"warning","event":"Process exited abnormally","exit_code":1,"logger":"task"}
